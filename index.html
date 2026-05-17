@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FTS favicon tests</title>
+    <link rel="icon" href="favicon-package/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-package/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-package/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-package/apple-touch-icon.png">
+    <link rel="manifest" href="favicon-package/site.webmanifest">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <a class="brand" href="index.html" aria-label="FTS favicon tests">
+          <img src="favicon-package/favicon-192x192.png" alt="">
+          <span>FTS favicon tests</span>
+        </a>
+        <nav class="nav" aria-label="Pages">
+          <a href="index.html" aria-current="page">All Variants</a>
+          <a href="square.html">Square</a>
+          <a href="circle.html">Circle</a>
+          <a href="transparent.html">Transparent</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <p class="eyebrow">Favicon test</p>
+        <h1>Three icon variants to test in the browser tab.</h1>
+        <p class="lead">Click any option. Each page has its own favicon, so you can compare the square, circle, and transparent versions directly in the browser tab.</p>
+      </section>
+
+      <section class="grid" aria-label="Favicon variants">
+        <a class="variant-card" href="square.html">
+          <span class="icon-stage plain">
+            <img src="favicon-package/favicon-512x512.png" alt="Square FTS icon">
+          </span>
+          <span>
+            <h2>Square</h2>
+            <p>A black square with the gold F mark. This is the original package version.</p>
+          </span>
+        </a>
+
+        <a class="variant-card" href="circle.html">
+          <span class="icon-stage">
+            <img src="favicon-circle-package/favicon-512x512.png" alt="Circle FTS icon">
+          </span>
+          <span>
+            <h2>Circle</h2>
+            <p>A black circle with the gold F mark and transparent corners around it.</p>
+          </span>
+        </a>
+
+        <a class="variant-card" href="transparent.html">
+          <span class="icon-stage">
+            <img src="favicon-transparent-package/favicon-512x512.png" alt="Transparent FTS icon">
+          </span>
+          <span>
+            <h2>Transparent</h2>
+            <p>Only the gold F mark, with no background. It is easiest to see on a light page.</p>
+          </span>
+        </a>
+      </section>
+    </main>
+  </body>
+</html>
