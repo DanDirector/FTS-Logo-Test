@@ -16,107 +16,52 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="shell">
-      <aside class="side">
-        <a class="logo" href="index.html" aria-label="FTS favicon tests">
-          <span class="logo-mark"><img src="favicon-package/favicon-192x192.png" alt=""></span>
-          <span class="logo-text">
-            <span class="n">FTS Logo</span>
-            <span class="s">Favicon Lab</span>
-          </span>
+    <main class="page">
+      <header class="site-header">
+        <a class="brand" href="index.html" aria-label="FTS favicon tests">
+          <span class="brand-mark"><img src="favicon-package/favicon-192x192.png" alt=""></span>
+          <span>FTS Logo</span>
         </a>
-        <nav class="nav" aria-label="Pages">
-          <div class="nav-label">Navigate</div>
-          <a class="nav-item active" href="index.html"><span class="nav-ico">⌂</span><span>Overview</span><span class="badge">3</span></a>
-          <a class="nav-item" href="square.html"><span class="nav-ico">□</span><span>Square</span></a>
-          <a class="nav-item" href="circle.html"><span class="nav-ico">○</span><span>Circle</span></a>
-          <a class="nav-item" href="transparent.html"><span class="nav-ico">F</span><span>Transparent</span></a>
+        <nav class="simple-nav" aria-label="Pages">
+          <a href="square.html">Square</a>
+          <a href="circle.html">Circle</a>
+          <a href="transparent.html">Transparent</a>
         </nav>
-        <div class="side-foot">
-          <div class="prof">
-            <div class="avatar">FT</div>
-            <div>
-              <div class="nm">Freedom Travel</div>
-              <div class="rl">Systems</div>
-            </div>
-          </div>
+      </header>
+
+      <section class="intro tile grey">
+        <div>
+          <p class="eyebrow">Favicon preview</p>
+          <h1>Choose a favicon variant.</h1>
+          <p>Open any card to switch to the page that uses that favicon in the browser tab.</p>
         </div>
-      </aside>
+      </section>
 
-      <main class="main">
-        <header class="top">
-          <div class="top-left">
-            <div class="icon-btn">⌘</div>
-            <div class="search-pill"><span>⌕</span><span>Compare favicon variants, packages, and browser tab behavior...</span></div>
+      <section class="variant-grid" aria-label="Favicon variants">
+        <a class="tile dark variant-card" href="square.html">
+          <div class="tile-label">Square</div>
+          <div class="icon-stage plain">
+            <img src="favicon-package/favicon-512x512.png" alt="Square FTS icon">
           </div>
-          <div class="top-right">
-            <div class="icon-btn"><span class="dot"></span>◦</div>
-            <div class="user-chip">
-              <div class="avatar">F</div>
-              <div>
-                <div class="nm">FTS Test</div>
-                <div class="id">ID 0003</div>
-              </div>
-            </div>
-            <div class="icon-btn white">⚙</div>
+          <p>Black square with the gold F mark.</p>
+        </a>
+
+        <a class="tile tan variant-card" href="circle.html">
+          <div class="tile-label">Circle</div>
+          <div class="icon-stage">
+            <img src="favicon-circle-package/favicon-512x512.png" alt="Circle FTS icon">
           </div>
-        </header>
+          <p>Black circle with transparent corners.</p>
+        </a>
 
-        <section class="headline">
-          <p class="eyebrow">Favicon preview system</p>
-          <h1>Logo <em>variants</em></h1>
-          <p class="lead">Three production-ready favicon packages for checking how the FTS mark behaves as a square, circle, and transparent browser tab icon.</p>
-        </section>
-
-        <section class="grid" aria-label="Favicon variants">
-          <a class="tile grey hero-tile" href="square.html">
-            <div>
-              <div class="tile-label">Current package</div>
-              <h2>Open any tile to switch the page favicon.</h2>
-              <p>Each detail page owns its own icon links in the document head, so the browser tab changes while you compare.</p>
-            </div>
-            <div class="stat-row">
-              <span class="stat-pill">ICO</span>
-              <span class="stat-pill">PNG</span>
-              <span class="stat-pill">Manifest</span>
-              <span class="stat-pill">Apple touch</span>
-            </div>
-          </a>
-
-          <a class="tile dark variant-card" href="square.html">
-            <div class="tile-label">Variant 01 <span class="chev">›››</span></div>
-            <div class="icon-stage plain">
-              <img src="favicon-package/favicon-512x512.png" alt="Square FTS icon">
-            </div>
-            <div>
-              <h2>Square</h2>
-              <p>A black square with the gold F mark. This is the original favicon package.</p>
-            </div>
-          </a>
-
-          <a class="tile tan variant-card" href="circle.html">
-            <div class="tile-label">Variant 02 <span class="chev">›››</span></div>
-            <div class="icon-stage">
-              <img src="favicon-circle-package/favicon-512x512.png" alt="Circle FTS icon">
-            </div>
-            <div>
-              <h2>Circle</h2>
-              <p>A black circle with the gold F mark and transparent corners around it.</p>
-            </div>
-          </a>
-
-          <a class="tile darker variant-card" href="transparent.html">
-            <div class="tile-label">Variant 03 <span class="chev">›››</span></div>
-            <div class="icon-stage">
-              <img src="favicon-transparent-package/favicon-512x512.png" alt="Transparent FTS icon">
-            </div>
-            <div>
-              <h2>Transparent</h2>
-              <p>Only the gold F mark, with no background behind the browser icon.</p>
-            </div>
-          </a>
-        </section>
-      </main>
-    </div>
+        <a class="tile darker variant-card" href="transparent.html">
+          <div class="tile-label">Transparent</div>
+          <div class="icon-stage">
+            <img src="favicon-transparent-package/favicon-512x512.png" alt="Transparent FTS icon">
+          </div>
+          <p>Only the gold F mark, no background.</p>
+        </a>
+      </section>
+    </main>
   </body>
 </html>
