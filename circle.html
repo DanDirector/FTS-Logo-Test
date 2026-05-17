@@ -6,60 +6,32 @@
     <title>Circle favicon</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon-circle-package/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-circle-package/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-circle-package/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon-circle-package/apple-touch-icon.png">
     <link rel="manifest" href="favicon-circle-package/site.webmanifest">
     <meta name="theme-color" content="#0a0a0a">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="msapplication-config" content="favicon-circle-package/browserconfig.xml">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="shell">
-      <aside class="side">
-        <a class="logo" href="index.html" aria-label="FTS favicon tests">
-          <span class="logo-mark"><img src="favicon-circle-package/favicon-192x192.png" alt=""></span>
-          <span class="logo-text"><span class="n">FTS Logo</span><span class="s">Favicon Lab</span></span>
-        </a>
-        <nav class="nav" aria-label="Pages">
-          <div class="nav-label">Navigate</div>
-          <a class="nav-item" href="index.html"><span class="nav-ico">⌂</span><span>Overview</span></a>
-          <a class="nav-item" href="square.html"><span class="nav-ico">□</span><span>Square</span></a>
-          <a class="nav-item active" href="circle.html"><span class="nav-ico">○</span><span>Circle</span></a>
-          <a class="nav-item" href="transparent.html"><span class="nav-ico">F</span><span>Transparent</span></a>
-        </nav>
-        <div class="side-foot"><div class="prof"><div class="avatar">FT</div><div><div class="nm">Freedom Travel</div><div class="rl">Systems</div></div></div></div>
-      </aside>
+    <main class="page">
+      <div class="brand">Favicon lab</div>
 
-      <main class="main">
-        <header class="top">
-          <div class="top-left"><div class="icon-btn">⌘</div><div class="search-pill"><span>⌕</span><span>Circle favicon package selected...</span></div></div>
-          <div class="top-right"><div class="icon-btn"><span class="dot"></span>◦</div><div class="user-chip"><div class="avatar">F</div><div><div class="nm">FTS Test</div><div class="id">CR 002</div></div></div><div class="icon-btn white">⚙</div></div>
-        </header>
-        <section class="headline">
-          <p class="eyebrow">Variant 02</p>
-          <h1>Circle <em>favicon</em></h1>
-          <p class="lead">This page uses the circular black icon package with transparent outer corners.</p>
-        </section>
-        <section class="grid">
-          <div class="tile tan detail-visual">
-            <div class="tile-label">Browser icon preview</div>
-            <div class="icon-stage"><img src="favicon-circle-package/favicon-512x512.png" alt="Circle FTS icon"></div>
-          </div>
-          <div class="tile dark detail-copy">
-            <div class="tile-label">Package details <span class="chev">›››</span></div>
-            <h2>Test page with the circle favicon.</h2>
-            <p>The browser tab should now show a black circle with the gold F mark inside.</p>
-            <div class="path-list">
-              <span>Folder: <code>favicon-circle-package</code></span>
-              <span>Main file: <code>favicon-circle-package/favicon.ico</code></span>
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
+      <nav class="switch" aria-label="Variants">
+        <a href="index.html">Overview</a>
+        <a href="square.html"><span class="dot"></span>Square</a>
+        <a class="active" href="circle.html"><span class="dot circle"></span>Circle</a>
+        <a href="transparent.html"><span class="dot ring"></span>Transparent</a>
+      </nav>
+
+      <div class="stage"><img src="favicon-circle-package/favicon-512x512.png" alt="Circle FTS icon"></div>
+
+      <div class="caption">
+        <h1>Circle <em>favicon</em></h1>
+        <code>favicon-circle-package/favicon.ico</code>
+      </div>
+    </main>
   </body>
 </html>
