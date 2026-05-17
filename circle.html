@@ -18,32 +18,48 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="page">
-      <header class="site-header">
-        <a class="brand" href="index.html" aria-label="FTS favicon tests">
-          <span class="brand-mark"><img src="favicon-circle-package/favicon-192x192.png" alt=""></span>
-          <span>FTS Logo</span>
+    <div class="shell">
+      <aside class="side">
+        <a class="logo" href="index.html" aria-label="FTS favicon tests">
+          <span class="logo-mark"><img src="favicon-circle-package/favicon-192x192.png" alt=""></span>
+          <span class="logo-text"><span class="n">FTS Logo</span><span class="s">Favicon Lab</span></span>
         </a>
-        <nav class="simple-nav" aria-label="Pages">
-          <a href="index.html">All variants</a>
-          <a href="square.html">Square</a>
-          <a href="transparent.html">Transparent</a>
+        <nav class="nav" aria-label="Pages">
+          <div class="nav-label">Navigate</div>
+          <a class="nav-item" href="index.html"><span class="nav-ico">⌂</span><span>Overview</span></a>
+          <a class="nav-item" href="square.html"><span class="nav-ico">□</span><span>Square</span></a>
+          <a class="nav-item active" href="circle.html"><span class="nav-ico">○</span><span>Circle</span></a>
+          <a class="nav-item" href="transparent.html"><span class="nav-ico">F</span><span>Transparent</span></a>
         </nav>
-      </header>
+        <div class="side-foot"><div class="prof"><div class="avatar">FT</div><div><div class="nm">Freedom Travel</div><div class="rl">Systems</div></div></div></div>
+      </aside>
 
-      <section class="detail-layout">
-        <div class="tile tan detail-preview">
-          <div class="tile-label">Circle favicon</div>
-          <div class="icon-stage">
-            <img src="favicon-circle-package/favicon-512x512.png" alt="Circle FTS icon">
-          </div>
-        </div>
-        <div class="tile dark detail-copy">
+      <main class="main">
+        <header class="top">
+          <div class="top-left"><div class="icon-btn">⌘</div><div class="search-pill"><span>⌕</span><span>Circle favicon package selected...</span></div></div>
+          <div class="top-right"><div class="icon-btn"><span class="dot"></span>◦</div><div class="user-chip"><div class="avatar">F</div><div><div class="nm">FTS Test</div><div class="id">CR 002</div></div></div><div class="icon-btn white">⚙</div></div>
+        </header>
+        <section class="headline">
           <p class="eyebrow">Variant 02</p>
-          <h1>Circle favicon</h1>
-          <p>The browser tab should now show a black circle with the gold F mark inside.</p>
-        </div>
-      </section>
-    </main>
+          <h1>Circle <em>favicon</em></h1>
+          <p class="lead">This page uses the circular black icon package with transparent outer corners.</p>
+        </section>
+        <section class="grid">
+          <div class="tile tan detail-visual">
+            <div class="tile-label">Browser icon preview</div>
+            <div class="icon-stage"><img src="favicon-circle-package/favicon-512x512.png" alt="Circle FTS icon"></div>
+          </div>
+          <div class="tile dark detail-copy">
+            <div class="tile-label">Package details <span class="chev">›››</span></div>
+            <h2>Test page with the circle favicon.</h2>
+            <p>The browser tab should now show a black circle with the gold F mark inside.</p>
+            <div class="path-list">
+              <span>Folder: <code>favicon-circle-package</code></span>
+              <span>Main file: <code>favicon-circle-package/favicon.ico</code></span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

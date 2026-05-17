@@ -18,32 +18,48 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="page">
-      <header class="site-header">
-        <a class="brand" href="index.html" aria-label="FTS favicon tests">
-          <span class="brand-mark"><img src="favicon-transparent-package/favicon-192x192.png" alt=""></span>
-          <span>FTS Logo</span>
+    <div class="shell">
+      <aside class="side">
+        <a class="logo" href="index.html" aria-label="FTS favicon tests">
+          <span class="logo-mark"><img src="favicon-transparent-package/favicon-192x192.png" alt=""></span>
+          <span class="logo-text"><span class="n">FTS Logo</span><span class="s">Favicon Lab</span></span>
         </a>
-        <nav class="simple-nav" aria-label="Pages">
-          <a href="index.html">All variants</a>
-          <a href="square.html">Square</a>
-          <a href="circle.html">Circle</a>
+        <nav class="nav" aria-label="Pages">
+          <div class="nav-label">Navigate</div>
+          <a class="nav-item" href="index.html"><span class="nav-ico">⌂</span><span>Overview</span></a>
+          <a class="nav-item" href="square.html"><span class="nav-ico">□</span><span>Square</span></a>
+          <a class="nav-item" href="circle.html"><span class="nav-ico">○</span><span>Circle</span></a>
+          <a class="nav-item active" href="transparent.html"><span class="nav-ico">F</span><span>Transparent</span></a>
         </nav>
-      </header>
+        <div class="side-foot"><div class="prof"><div class="avatar">FT</div><div><div class="nm">Freedom Travel</div><div class="rl">Systems</div></div></div></div>
+      </aside>
 
-      <section class="detail-layout">
-        <div class="tile darker detail-preview">
-          <div class="tile-label">Transparent favicon</div>
-          <div class="icon-stage">
-            <img src="favicon-transparent-package/favicon-512x512.png" alt="Transparent FTS icon">
-          </div>
-        </div>
-        <div class="tile grey detail-copy">
+      <main class="main">
+        <header class="top">
+          <div class="top-left"><div class="icon-btn">⌘</div><div class="search-pill"><span>⌕</span><span>Transparent favicon package selected...</span></div></div>
+          <div class="top-right"><div class="icon-btn"><span class="dot"></span>◦</div><div class="user-chip"><div class="avatar">F</div><div><div class="nm">FTS Test</div><div class="id">TR 003</div></div></div><div class="icon-btn white">⚙</div></div>
+        </header>
+        <section class="headline">
           <p class="eyebrow">Variant 03</p>
-          <h1>Transparent favicon</h1>
-          <p>The browser tab should now show only the gold F mark without the black background.</p>
-        </div>
-      </section>
-    </main>
+          <h1>Transparent <em>favicon</em></h1>
+          <p class="lead">This page uses the transparent package: only the gold F mark, with no black backing shape.</p>
+        </section>
+        <section class="grid">
+          <div class="tile darker detail-visual">
+            <div class="tile-label">Browser icon preview</div>
+            <div class="icon-stage"><img src="favicon-transparent-package/favicon-512x512.png" alt="Transparent FTS icon"></div>
+          </div>
+          <div class="tile grey-2 detail-copy">
+            <div class="tile-label">Package details <span class="chev">›››</span></div>
+            <h2>Test page with the transparent favicon.</h2>
+            <p>The browser tab should now show only the gold F mark without the black background.</p>
+            <div class="path-list">
+              <span>Folder: <code>favicon-transparent-package</code></span>
+              <span>Main file: <code>favicon-transparent-package/favicon.ico</code></span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
